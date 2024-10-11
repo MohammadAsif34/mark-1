@@ -20,7 +20,7 @@ const Navbar = ({ theme }) => {
   function classNames(...classes) {
     return classes.filter(Boolean).join(" ");
   }
-  alert(theme.nav);
+  // alert(theme.nav);
 
   return (
     <>
