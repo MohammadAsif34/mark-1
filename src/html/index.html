@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query</title>
+    <style>
+      body {
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .div {
+        width: 200px;
+        height: 150px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+      }
+      @media only screen and (min-width: 600px) {
+        .div {
+          background-color: green;
+        }
+      }
+      @media only screen and (min-width: 1080px) {
+        .div {
+          transition: font-size 0.8s linear, background-color, 0.8s linear;
+          background-color: orange;
+          /* transform: rotate(2deg); */
+          font-size: 48px;
+        }
+      }
+      .div2 {
+        padding: 10px;
+        width: 450px;
+        height: 60px;
+        border: 1px solid black;
+
+        input {
+          padding: 10px;
+          width: 80%;
+          display: block;
+          /* border: none; */
+        }
+        label span {
+          display: block;
+          transform: translate(25px, 20px);
+          font-size: 25px;
+          border: 1px solid black;
+        }
+        input:active {
+          background-color: gray;
+          label span {
+            transform: translate(-25px, -20px);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">hello</div>
+    <br />
+    <form action="" class="div2">
+      <label for=""
+        ><span>Password:</span>
+        <input type="text" name="" id="" />
+      </label>
+    </form>
+  </body>
+</html>

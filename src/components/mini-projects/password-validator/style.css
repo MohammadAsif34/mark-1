@@ -1,0 +1,16 @@
+@media only screen and (min-width: 600px) {
+  .loginBox {
+    /* width: 600px; */
+    /* background-color: red; */
+  }
+}
+.loginBox {
+  /* width: 450px; */
+  /* background-color: green; */
+}
+@media only screen and (min-width: 500px) {
+  .loginBox {
+    width: 650px;
+    /* background-color: rgb(38, 49, 38); */
+  }
+}
